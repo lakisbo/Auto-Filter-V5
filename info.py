@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "5288872316:AAEGVVP2Q22e2Z8USYn1rYySTq-9YvB
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/6c4d7f0a8ba91d1e7a119.jpg https://telegra.ph/file/69bb4bb6cd3feae641a67.jpg https://telegra.ph/file/4068615372b6264e6bb68.jpg https://telegra.ph/file/b95e13235471c38efbd78.jpg https://telegra.ph/file/84242b38ddc692fe97eec.jpg https://telegra.ph/file/8efc23509a6702660bb4f.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/6c4d7f0a8ba91d1e7a119.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0df0b5243b1402280a6e3.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/8ee413afc32e5b393e790.jpg")
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/c27e8ce55dddeeebc5ea2.jpg")
@@ -38,8 +38,8 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://urlshort:urlshort@cluster0.peyb7uf.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cynitev5Bot")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_fileser')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_fileserve')
 
 # Channel Button Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/cynitesupport')
@@ -55,7 +55,7 @@ HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/cynitemovies/3')
 
 # Log Channels
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001505416974))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001819673897))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001684268218))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
